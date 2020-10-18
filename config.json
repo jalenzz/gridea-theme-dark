@@ -1,0 +1,14 @@
+{
+  "name": "Dark",
+  "version": "0.1.0",
+  "author": "Jalen",
+  "customConfig": [
+    {
+      "name": "author",
+      "label": "博主名字",
+      "group": "信息",
+      "type": "input",
+      "note": ""
+    }
+  ]
+}

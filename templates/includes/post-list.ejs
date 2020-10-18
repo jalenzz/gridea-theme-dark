@@ -1,0 +1,38 @@
+<%
+let years = [];
+posts.forEach((item) => {
+  const year = item.date.substring(0, 4);
+  if (!years.includes(year)) {
+    years.push(year);
+  }
+});
+%>
+
+<div class="hd">
+  <% var last; %>
+  <% years.forEach(function(year) { %>
+    <% if (last != year){ %>
+      <div class="titlex">
+          <p>
+            <span class="jing">#</span>
+            <%= year %>
+          </p>
+      </div>
+      <% last = year; %>
+    <% } %>
+    <% posts.forEach(function(post) { %>
+      <% if (post.date.indexOf(year) !== -1) { %>
+        <a class="flink" href="<%= post.link %>">
+          <div class="list">
+              <div class="postname">
+                <%= post.title %>
+              </div>
+              <div class="posttime">
+                <%= post.dateFormat %>
+              </div>
+          </div>
+        </a>
+      <% } %>
+    <% }); %>
+  <% }); %>
+</div>
