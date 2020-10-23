@@ -9,6 +9,62 @@
       "group": "信息",
       "type": "input",
       "note": ""
+    },
+    {
+      "name": "baidu",
+      "label": "百度统计 Key",
+      "group": "网站统计",
+      "value": "",
+      "type": "input",
+      "note": "代码中 hm.js? 后边的字符串"
+    },
+    {
+      "name": "ga",
+      "label": "Google Analyse 跟踪 ID",
+      "group": "网站统计",
+      "value": "",
+      "type": "input",
+      "note": "UA-xxxxxxxxx-x"
+    },
+    {
+      "name": "gtag",
+      "label": "Google gtag.js 的媒体资源 ID",
+      "group": "网站统计",
+      "value": "",
+      "type": "input",
+      "note": "https://analytics.google.com/analytics/web/ 中的 管理 -> 媒体资源设置 -> 跟踪 ID"
+    },
+    {
+      "name": "woyaola",
+      "label": "51.la 站点统计 ID",
+      "group": "网站统计",
+      "value": "",
+      "type": "input",
+      "note": "https://www.51.la/user/site/index"
+    },
+    {
+      "name": "cnzz",
+      "label": "友盟/cnzz 站点统计 web_id",
+      "group": "网站统计",
+      "value": "",
+      "type": "input",
+      "note": "https://web.umeng.com/main.php?c=site&a=show"
+    },
+    {
+      "name": "tencent_sid",
+      "label": "腾讯统计 sid",
+      "group": "网站统计",
+      "value": "",
+      "type": "input",
+      "note": "https://mta.qq.com/h5/manage/ctr_app_manage"
+    },
+    {
+      "name": "tencent_cid",
+      "label": "腾讯统计 cid",
+      "group": "网站统计",
+      "value": "",
+      "type": "input",
+      "note": "开启高级功能才有 cid https://mta.qq.com/h5/manage/ctr_app_manage"
     }
   ]
 }

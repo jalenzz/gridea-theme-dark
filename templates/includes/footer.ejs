@@ -1,3 +1,8 @@
 <div class="site-footer">
   <%- themeConfig.footerInfo %>
+  <% if(site.customConfig.cnzz) { %>
+    <!-- cnzz Analytics Icon -->
+    <span id="cnzz_stat_icon_<%- site.customConfig.cnzz %>" style="display: none"></span>
+  <% } %>
 </div>
+<%- include('./analytics.ejs') %>
