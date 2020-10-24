@@ -65,6 +65,86 @@
       "value": "",
       "type": "input",
       "note": "开启高级功能才有 cid https://mta.qq.com/h5/manage/ctr_app_manage"
+    },
+    {
+      "name": "comment",
+      "label": "评论",
+      "group": "评论",
+      "value": "valine",
+      "type": "select",
+      "options": [
+        {
+          "value": "valine",
+          "label": "Valine"
+        },
+        {
+          "value": "utterances",
+          "label": "Utterances"
+        },
+        {
+          "value": "artalk",
+          "label": "Artalk"
+        },
+        {
+          "value": "twikoo",
+          "label": "Twikoo"
+        },
+        {
+          "value": "livere",
+          "label": "来必力"
+        }
+      ]
+    },
+    {
+      "name": "valine",
+      "label": "Valine",
+      "group": "评论",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "appid", "name": "appid", "type": "input", "value": "", "note": "从 LeanCloud 的应用中得到的 appId" },
+        { "label": "appkey", "name": "appkey", "type": "input", "value": "", "note": "从 LeanCloud 的应用中得到的 appKey" },
+        { "label": "avatar", "name": "avatar", "type": "input", "value": "retro", "note": "Gravatar 头像展示方式 https://valine.js.org/avatar.html" },
+        { "label": "每页条数", "name": "pageSize", "type": "input", "value": "", "note": "评论列表分页，每页条数" },
+        { "label": "语言", "name": "lang", "type": "input", "value": "", "note": "zh-CN | zh-TW | en | ja" },
+        { "label": "REST API 服务器地址", "name": "serverURLs", "type": "input", "value": "", "note": "国际版不填" }
+      ],
+      "note": "https://valine.js.org/"
+    },
+    {
+      "name": "utterances",
+      "label": "Utterances",
+      "group": "评论",
+      "type": "array",
+      "value": [],
+      "arrayItems": [
+        { "label": "repo", "name": "repo", "type": "input", "value": "your repo" },
+        { "label": "issue_term", "name": "issue_term", "type": "input", "value": "og:title" },
+        { "label": "theme", "name": "theme", "type": "input", "value": "", "note": "github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark" },
+        { "label": "crossorigin", "name": "crossorigin", "type": "input", "value": "anonymous" }
+      ],
+      "note": "https://utteranc.es/"
+    },
+    {
+      "name": "artalk",
+      "label": "Artalk 后端程序 URL",
+      "group": "评论",
+      "type": "input",
+      "note": "https://github.com/qwqcode/Artalk"
+    },
+    {
+      "name": "twikoo",
+      "label": "Twikoo 环境 ID",
+      "group": "评论",
+      "type": "input",
+      "note": "https://twikoo.js.org"
+    },
+    {
+      "name": "livere",
+      "label": "来必力 uid",
+      "group": "评论",
+      "type": "input",
+      "note": "https://www.livere.com/my_Livere"
     }
   ]
 }

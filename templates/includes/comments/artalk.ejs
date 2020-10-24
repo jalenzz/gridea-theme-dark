@@ -1,0 +1,17 @@
+<div id="ArtalkComments"></div>
+<link href="https://cdn.jsdelivr.net/gh/qwqcode/Artalk/dist/Artalk.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/qwqcode/Artalk/dist/Artalk.js"></script>
+<script>
+new Artalk({
+  el: '#ArtalkComments',
+  placeholder: '来啊，快活啊 ( ゜- ゜)', // 占位符
+  noComment: '快来成为第一个评论的人吧~', // 无评论时显示
+  defaultAvatar: 'mp', // 参考 https://cn.gravatar.com/site/implement/images/#default-image
+  pageKey: '<%= post.link %>',
+  serverUrl: '<%= site.customConfig.artalk %>',
+  readMore: { // 阅读更多配置
+    pageSize: 15, // 每次请求获取评论数
+    autoLoad: true // 滚动到底部自动加载
+  }
+});
+</script>

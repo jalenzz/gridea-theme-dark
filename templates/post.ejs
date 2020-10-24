@@ -15,6 +15,21 @@
       <div class="post-content">
         <%- post.content %>
       </div>
+
+      <% if (site.customConfig.comment != ' ') { %>
+        <br><br>
+        <% var path = './includes/comments/' + site.customConfig.comment %>
+        <%- include(path) %>
+      <% } else if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
+        <% if (commentSetting.commentPlatform === 'gitalk') { %>
+          <%- include('./includes/gitalk') %>
+        <% } %>
+
+        <% if (commentSetting.commentPlatform === 'disqus') { %>
+          <%- include('./includes/disqus') %>
+        <% } %>
+      <% } %>
+
     </div>
     <%- include('./includes/footer') %>
   </body>

@@ -1,0 +1,17 @@
+<div id="vcomments"></div>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "<%= site.customConfig.valine[0].appid %>",
+    app_key: "<%= site.customConfig.valine[0].appkey %>",
+    placeholder: "<%= site.customConfig.valine[0].placeholder %>",
+    path: "<%= post.link %>",
+    avatar: "<%= site.customConfig.valine[0].avatar %>",
+    meta: ['nick', 'mail', 'link'],
+    pageSize: "<%= site.customConfig.valine[0].pageSize %>",
+    lang: "<%= site.customConfig.valine[0].lang %>",
+    serverURLs: "<%= site.customConfig.valine[0].serverURLs %>",
+  });
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://valine.js.org" rel="nofollow noopener">comments powered by Valine.</a></noscript>
