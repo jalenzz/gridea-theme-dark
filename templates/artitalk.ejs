@@ -1,0 +1,27 @@
+<% if (site.customConfig.artitalk) { %>
+  <html>
+    <head>
+      <%- include('./includes/head', { siteTitle: `说说 | ${themeConfig.siteName}` }) %>
+    </head>
+    <body>
+      <%- include('./includes/nav') %>
+      <br><br><br>
+      <div class="hd posts">
+
+        <div id="artitalk_main"></div>
+        <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+        <script>
+          new Artitalk({
+            appId: '<%= site.customConfig.artitalk_appId %>',
+            appKey: '<%= site.customConfig.artitalk_appKey %>',
+            pageSize: '<%= site.customConfig.artitalk_pageSize %>',
+            serverURL: '<%= site.customConfig.artitalk_serverURL %>',
+            motion: '<%= site.customConfig.artitalk_motion %>',
+            atComment: '<%= site.customConfig.artitalk_atComment %>',
+          })
+        </script>
+      </div>
+      <%- include('./includes/footer') %>
+    </body>
+  </html>
+<% } %>

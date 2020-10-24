@@ -145,6 +145,53 @@
       "group": "评论",
       "type": "input",
       "note": "https://www.livere.com/my_Livere"
+    },
+    {
+      "name": "artitalk",
+      "label": "Artitalk 说说",
+      "group": "Artitalk",
+      "type": "switch",
+      "value": false,
+      "note": "基于 LeanCloud 的说说页面 https://artitalk.js.org/"
+    },
+    {
+      "name": "artitalk_appId",
+      "label": "appId",
+      "group": "Artitalk",
+      "type": "input"
+    },
+    {
+      "name": "artitalk_appKey",
+      "label": "appKey",
+      "group": "Artitalk",
+      "type": "input"
+    },
+    {
+      "name": "artitalk_pageSize",
+      "label": "每页说说数量",
+      "group": "Artitalk",
+      "type": "input"
+    },
+    {
+      "name": "artitalk_serverURL",
+      "label": "serverURL",
+      "group": "Artitalk",
+      "type": "input",
+      "note": "国际版可不填"
+    },
+    {
+      "name": "artitalk_motion",
+      "label": "加载动画",
+      "group": "Artitalk",
+      "type": "switch",
+      "value": false
+    },
+    {
+      "name": "artitalk_atComment",
+      "label": "评论功能",
+      "group": "Artitalk",
+      "type": "switch",
+      "value": false
     }
   ]
 }
