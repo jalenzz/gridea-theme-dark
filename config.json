@@ -70,9 +70,13 @@
       "name": "comment",
       "label": "评论",
       "group": "评论",
-      "value": "valine",
+      "value": "false",
       "type": "select",
       "options": [
+        {
+          "value": "false",
+          "label": "关闭评论"
+        },
         {
           "value": "valine",
           "label": "Valine"

@@ -16,7 +16,7 @@
         <%- post.content %>
       </div>
 
-      <% if (site.customConfig.comment != ' ') { %>
+      <% if (site.customConfig.comment != 'false') { %>
         <br><br>
         <% var path = './includes/comments/' + site.customConfig.comment %>
         <%- include(path) %>
