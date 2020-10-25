@@ -11,6 +11,13 @@
       "note": ""
     },
     {
+      "name": "renderKaTeX",
+      "label": "数学公式渲染",
+      "group": "文章配置",
+      "type": "switch",
+      "value": false
+    },
+    {
       "name": "baidu",
       "label": "百度统计 Key",
       "group": "网站统计",
