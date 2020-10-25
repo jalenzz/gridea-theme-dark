@@ -11,12 +11,15 @@ body {
 a {
   color: #d2d2d2;
   text-decoration: none;
+
+  &:focus, &:hover {
+    color: #699be9;
+    text-decoration: underline;
+  }
 }
 
-a:focus,
-a:hover {
-  color: #699be9;
-  text-decoration: underline;
+hr {
+  border-color: #58606b;
 }
 
 .site-footer {
@@ -26,23 +29,10 @@ a:hover {
   color: #adb5bd;
 }
 
-.clear {
-  clear: both;
-}
-
-.navdiv {
-  width: 100%;
-}
-
 .hd {
   width: 650px;
   // height: 100%;
   margin: auto;
-}
-
-.bg_while {
-  background-color: #ffffff;
-  color: #51525d;
 }
 
 @media screen and (max-width: 800px) {

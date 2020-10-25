@@ -1,99 +1,99 @@
-.logodiv {
-  text-align: center;
-}
+.header {
+  .logo {
+    text-align: center;
 
-.titlex {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 30px;
-}
+    > img {
+      margin: 1em;
+      width: 200px;
+      border-radius: 100%;
+    }
 
-.list {
-  padding-left: 25px;
-  padding-right: 25px;
-  height: 30px;
-  cursor: pointer;
-}
+    .logot {
+      font-weight: bold;
+      font-size: 24px;
+      margin-top: -10px;
+      margin-bottom: -20px;
 
-.postname {
-  float: left;
-}
+      .logo_1 {
+        color: #888888;
+      }
 
-.posttime {
-  float: right;
-}
+      .logo_2 {
+        color: #6d9ee7;
+      }
 
-.logopng {
-  margin: 1em;
-  width: 200px;
-  border-radius: 100%;
-}
-
-.jing {
-  color: #6d9ee7;
-}
-
-.logot {
-  font-weight: bold;
-  font-size: 24px;
-  margin-top: -10px;
-  margin-bottom: -20px;
-}
-
-.logot .logo_1 {
-  color: #888888;
-}
-
-.logot .logo_2 {
-  color: #6d9ee7;
-}
-
-.logot .logo_3 {
-  color: #be8355;
-}
-
-.navd {
-  padding-top: 14px;
-}
-
-.headt {
-  border-bottom: 1px solid #efefef;
-  height: 50px;
-}
-
-.fh {
-  top: 24px;
-  position: absolute;
-}
-
-hr {
-  border-color: #58606b;
-}
-
-.breadcrumb {
-  margin-bottom: 20px;
-  list-style: none;
-  border-radius: 4px;
-  padding: 8px 15px;
-  background-color: initial;
-  text-align: center;
-
-  & > li {
-    display: inline-block;
-
-    & + li::before {
-      padding: 0 5px;
-      color: #ccc;
-      content: "&\00a0";
+      .logo_3 {
+        color: #be8355;
+      }
     }
   }
 
-  &.active {
-    color: #777;
+  .breadcrumb {
+    margin-bottom: 20px;
+    list-style: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    background-color: initial;
+    text-align: center;
+
+    & > li {
+      display: inline-block;
+
+      & + li::before {
+        padding: 0 5px;
+        color: #ccc;
+        content: "&\00a0";
+      }
+    }
+
+    &.active {
+      color: #777;
+    }
+
+    &hr {
+      margin-top: -15px;
+      margin-bottom: -15px;
+    }
+  }
+}
+
+.post-list {
+  .titlex {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+
+    span {
+      color: #6d9ee7;
+    }
   }
 
-  &hr{
-    margin-top: -15px;
-    margin-bottom: -15px;
+  .flink {
+    .list {
+      padding-left: 25px;
+      padding-right: 25px;
+      height: 30px;
+      cursor: pointer;
+
+      .post_name {
+        float: left;
+      }
+
+      .post_time {
+        float: right;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .post_time {
+    display: none;
+  }
+
+  .post_name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

@@ -13,20 +13,18 @@ posts.forEach((item) => {
 });
 %>
 
-<div class="hd">
+<div class="post-list hd">
   <% if (haveTop.length > 0) { %>
     <div class="titlex">
-      <p>
-        <span class="jing">#</span> 置顶
-      </p>
+      <p><span>#</span> 置顶</p>
     </div>
     <% haveTop.forEach((post) => { %>
       <a class="flink" href="<%= post.link %>">
         <div class="list">
-            <div class="postname">
+            <div class="post_name">
               <%= post.title %>
             </div>
-            <div class="posttime">
+            <div class="post_time">
               <%= post.dateFormat %>
             </div>
         </div>
@@ -38,10 +36,7 @@ posts.forEach((item) => {
   <% years.forEach((year) => { %>
     <% if (last != year){ %>
       <div class="titlex">
-          <p>
-            <span class="jing">#</span>
-            <%= year %>
-          </p>
+        <p><span>#</span> <%= year %></p>
       </div>
       <% last = year; %>
     <% } %>
@@ -49,10 +44,10 @@ posts.forEach((item) => {
       <% if (post.date.indexOf(year) !== -1) { %>
         <a class="flink" href="<%= post.link %>">
           <div class="list">
-              <div class="postname">
+              <div class="post_name">
                 <%= post.title %>
               </div>
-              <div class="posttime">
+              <div class="post_time">
                 <%= post.dateFormat %>
               </div>
           </div>
