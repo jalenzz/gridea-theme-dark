@@ -10,4 +10,25 @@
 
 *主题还处于开发期，完善程度不高，欢迎提新功能，一定尽力开发。
 
+## Features
+
+- [x] 支持 LaTeX 数学公式
+- [x] 支持代码高亮
+- [x] 支持多款评论插件
+- [x] 支持多款网页统计工具
+- [x] 支持文章置顶显示
+- [x] 支持 About 页面快速创建
+- [x] 支持 [Artitalk](https://artitalk.js.org/) 页面快速创建
+
+## ToDO
+
+- [ ] 友链页面
+- [ ] 文章搜索
+- [ ] [Flying Page 预加载](https://github.com/gijo-varghese/flying-pages)
+- [ ] 自定义 CSS
+- [ ] 多款配色可选
+- [ ] 自定义配色
+
+Special thanks to [@sanjinhub/hexo-theme-geek](https://github.com/sanjinhub/hexo-theme-geek).
+
 💖 Enjoy it.
