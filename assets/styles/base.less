@@ -1,19 +1,19 @@
 body {
-  background-color: #3a3e4a;
-  color: #d2d2d2;
+  background-color: var(--bg-color);
+  color: var(--body-color);
   font-weight: 400;
   font-size: 14px;
-  font-family: "Menlo", "Meslo LG", monospace;
+  font-family: var(--main-font-family);
   line-height: 1.725;
   text-rendering: geometricPrecision;
 }
 
 a {
-  color: #d2d2d2;
+  color: var(--body-color);
   text-decoration: none;
 
   &:focus, &:hover {
-    color: #699be9;
+    color: var(--main-color);
     text-decoration: underline;
   }
 }
@@ -26,7 +26,6 @@ hr {
   font-size: 12px;
   text-align: center;
   padding: 24px;
-  color: #adb5bd;
 }
 
 .hd {
