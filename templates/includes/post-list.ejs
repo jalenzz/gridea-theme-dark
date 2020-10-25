@@ -1,16 +1,41 @@
 <%
-let years = [];
+let years = [], haveTop = [], noTop = [];
 posts.forEach((item) => {
   const year = item.date.substring(0, 4);
   if (!years.includes(year)) {
-    years.push(year);
+    if (!item.isTop) {
+      years.push(year);
+      noTop.push(item)
+    } else {
+      haveTop.push(item);
+    }
   }
 });
 %>
 
 <div class="hd">
+  <% if (haveTop.length > 0) { %>
+    <div class="titlex">
+      <p>
+        <span class="jing">#</span> 置顶
+      </p>
+    </div>
+    <% haveTop.forEach((post) => { %>
+      <a class="flink" href="<%= post.link %>">
+        <div class="list">
+            <div class="postname">
+              <%= post.title %>
+            </div>
+            <div class="posttime">
+              <%= post.dateFormat %>
+            </div>
+        </div>
+      </a>
+    <% }); %>
+  <% } %>
+
   <% var last; %>
-  <% years.forEach(function(year) { %>
+  <% years.forEach((year) => { %>
     <% if (last != year){ %>
       <div class="titlex">
           <p>
@@ -20,7 +45,7 @@ posts.forEach((item) => {
       </div>
       <% last = year; %>
     <% } %>
-    <% posts.forEach(function(post) { %>
+    <% noTop.forEach((post) => { %>
       <% if (post.date.indexOf(year) !== -1) { %>
         <a class="flink" href="<%= post.link %>">
           <div class="list">
