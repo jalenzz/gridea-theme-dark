@@ -69,3 +69,31 @@
 hr {
   border-color: #58606b;
 }
+
+.breadcrumb {
+  margin-bottom: 20px;
+  list-style: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  background-color: initial;
+  text-align: center;
+
+  & > li {
+    display: inline-block;
+
+    & + li::before {
+      padding: 0 5px;
+      color: #ccc;
+      content: "&\00a0";
+    }
+  }
+
+  &.active {
+    color: #777;
+  }
+
+  &hr{
+    margin-top: -15px;
+    margin-bottom: -15px;
+  }
+}
