@@ -1,8 +1,17 @@
 <div class="site-footer">
-  <%- themeConfig.footerInfo %>
   <% if(site.customConfig.cnzz) { %>
     <!-- cnzz Analytics Icon -->
     <span id="cnzz_stat_icon_<%- site.customConfig.cnzz %>" style="display: none"></span>
   <% } %>
+
+  <% if(site.customConfig.busuanzi) { %>
+    <div id="busuanzi_container_site_pv">
+      本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+    </div>
+  <% } %>
+
+  <div>
+    <%- themeConfig.footerInfo %>
+  </div>
 </div>
 <%- include('./analytics.ejs') %>

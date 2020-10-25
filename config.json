@@ -25,6 +25,13 @@
       "value": false
     },
     {
+      "name": "busuanzi",
+      "label": "不蒜子统计",
+      "group": "网站统计",
+      "type": "switch",
+      "value": false
+    },
+    {
       "name": "baidu",
       "label": "百度统计 Key",
       "group": "网站统计",
