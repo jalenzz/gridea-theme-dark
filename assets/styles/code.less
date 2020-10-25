@@ -1,0 +1,121 @@
+pre {
+  font-size: 1em;
+  background-color: #1e2224;
+
+  code {
+    padding: 0em;
+    background-color: transparent;
+  }
+}
+
+/**
+ * PrismJS 1.21.0
+ * https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+arduino+bash+c+cpp+diff+docker+ini+latex+markdown+nginx+powershell+python+yaml&plugins=line-numbers
+ * @author Lea Verou
+ * @modified spencerwooo monsterxcn jalenchuh
+ * jalenchuh modified it in order to use on highligh.js
+ */
+code[class*='language-'], pre[class*='language-'] {
+  color: #fff;
+  background-color: #1e2224;
+  text-shadow: none;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media print {
+  code[class*='language-'], pre[class*='language-'] {
+    text-shadow: none;
+  }
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+  overflow: auto;
+  color: #fff;
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'], :not(pre) > code {
+  color: #20a7e0;
+  background-color: transparent;
+  white-space: normal;
+  font-size: 0.9em;
+  padding: 0.2em 0.5em;
+
+  &::before {
+    content: '`';
+  }
+
+  &::after {
+    content: '`';
+  }
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment, .hljs-prolog, .hljs-doctype, .hljs-cdata {
+  color: slategray;
+}
+
+.hljs-punctuation {
+  color: #999;
+}
+
+.hljs-namespace {
+  opacity: 0.7;
+}
+
+.hljs-property, .hljs-tag, .hljs-boolean, .hljs-number, .hljs-constant, .hljs-symbol, .hljs-deleted {
+  color: #c71b7b;
+}
+
+.hljs-selector, .hljs-attr-name, .hljs-string, .hljs-char, .hljs-builtin, .hljs-inserted {
+  color: #690;
+}
+
+.hljs-operator, .hljs-entity, .hljs-url, .language-css .hljs-string, .style .hljs-string {
+  color: #9a6e3a;
+}
+
+.hljs-atrule, .hljs-attr-value, .hljs-keyword {
+  color: #20a7e0;
+}
+
+.hljs-function, .hljs-class-name {
+  color: #dd4a68;
+}
+
+.hljs-regex, .hljs-important, .hljs-variable {
+  color: #e90;
+}
+
+.hljs-important, .hljs-bold {
+  font-weight: bold;
+}
+
+.hljs-italic {
+  font-style: italic;
+}
+
+.hljs-entity {
+  cursor: help;
+}

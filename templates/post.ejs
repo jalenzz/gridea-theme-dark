@@ -4,6 +4,10 @@
     <% if (site.customConfig.renderKaTeX) { %>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
     <% } %>
+    <% if (site.customConfig.codeHighlight) { %>
+      <script src="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+      <script>hljs.initHighlightingOnLoad()</script>
+    <% } %>
   </head>
 
   <body>
