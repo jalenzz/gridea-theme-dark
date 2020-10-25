@@ -196,6 +196,20 @@
       "group": "Artitalk",
       "type": "switch",
       "value": false
+    },
+    {
+      "name": "about",
+      "label": "关于页开关",
+      "group": "关于页",
+      "type": "switch",
+      "value": false
+    },
+    {
+      "name": "about_content",
+      "label": "关于页内容（支持 Markdown 格式）",
+      "group": "关于页",
+      "type": "markdown",
+      "value": ""
     }
   ]
 }

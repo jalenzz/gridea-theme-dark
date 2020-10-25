@@ -1,0 +1,16 @@
+<% if (site.customConfig.about) { %>
+  <html>
+    <head>
+      <%- include('./includes/head', { siteTitle: `关于 | ${themeConfig.siteName}` }) %>
+    </head>
+    <body>
+      <%- include('./includes/nav') %>
+      <br><br><br>
+      <div class="hd posts">
+        <%- site.customConfig.about_content %>
+      </div>
+
+      <%- include('./includes/footer') %>
+    </body>
+  </html>
+<% } %>
