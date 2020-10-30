@@ -231,6 +231,32 @@
       "group": "关于页",
       "type": "markdown",
       "value": ""
+    },
+    {
+      "name": "preload",
+      "label": "预加载",
+      "group": "博客加速",
+      "value": "false",
+      "type": "select",
+      "note": "参考 https://blog.jalenchuh.cn/posts/how-i-make-blog-faster/#预加载",
+      "options": [
+        {
+          "value": "false",
+          "label": "关闭预加载"
+        },
+        {
+          "value": "FlyingPages",
+          "label": "Flying Pages"
+        },
+        {
+          "value": "quicklink",
+          "label": "quicklink"
+        },
+        {
+          "value": "instant.page",
+          "label": "instant.page"
+        }
+      ]
     }
   ]
 }

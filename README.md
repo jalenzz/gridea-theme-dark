@@ -19,12 +19,12 @@
 - [x] 支持文章置顶显示
 - [x] 支持 About 页面快速创建
 - [x] 支持 [Artitalk](https://artitalk.js.org/) 页面快速创建
+- [x] 页面预加载
 
 ## ToDO
 
 - [ ] 友链页面
 - [ ] 文章搜索
-- [ ] [Flying Page 预加载](https://github.com/gijo-varghese/flying-pages)
 - [ ] 自定义 CSS
 - [ ] 多款配色可选
 - [ ] 自定义配色
