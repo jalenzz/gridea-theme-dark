@@ -1,3 +1,9 @@
+<%
+const publishedDays = Math.ceil(
+  (new Date() - new Date(post.date)) / (1000 * 60 * 60 * 24)
+)
+%>
+
 <html>
   <head>
     <%- include('./includes/head', { siteTitle: `${post.title} | ${themeConfig.siteName}` }) %>
@@ -19,6 +25,15 @@
         <p><%= post.title %></p>
         <hr>
       </div>
+
+      <% if(site.customConfig.oldTip && publishedDays >= 180) { %>
+        <div class="admonition">
+          <p style="margin-bottom: 0px;">
+            📢 <strong>过期警告：本文距今已有 <%= publishedDays %> 天未更新，内容可能有所偏颇，还请仔细甄别！</strong>
+          </p>
+        </div>
+      <% } %>
+
       <div class="post-content">
         <%- post.content %>
       </div>

@@ -20,6 +20,7 @@
 - [x] 支持 About 页面快速创建
 - [x] 支持 [Artitalk](https://artitalk.js.org/) 页面快速创建
 - [x] 页面预加载
+- [x] 文章过期提醒
 
 ## ToDO
 

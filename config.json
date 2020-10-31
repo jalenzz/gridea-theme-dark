@@ -25,6 +25,14 @@
       "value": false
     },
     {
+      "name": "oldTip",
+      "label": "过期提示",
+      "group": "文章配置",
+      "type": "switch",
+      "note": "文章超过 180 天未更新，在文章开题进行提示",
+      "value": false
+    },
+    {
       "name": "busuanzi",
       "label": "不蒜子统计",
       "group": "网站统计",
