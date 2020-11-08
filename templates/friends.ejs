@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <%- include('./includes/head', { siteTitle: `友链 | ${themeConfig.siteName}` }) %>
+  </head>
+
+  <body>
+    <div class="hd posts">
+      <a href="/">
+        <svg class="replay-btn" viewBox="0 0 1159 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M512 0L0 512l512 512L660.54321 874.403292 403.489712 617.349794h756.411523v-210.699588H403.489712l257.053498-258.106996L512 0z"></path></svg>
+      </a>
+      <div class="post-title">
+        <p>我的朋友们</p>
+        <hr>
+      </div>
+
+      <div class="post-content">
+        <% if (site.customConfig.friends) { %>
+          <% site.customConfig.friends.forEach((friend) => { %>
+            <a href="<%= friend.siteLink %>" target="_blank">
+              <div class="friend-box">
+                <% if (friend.logoUrl || friend.siteLogo) { %>
+                  <img class="friend-avatar" src="<%= friend.logoUrl || friend.siteLogo %>">
+                <% } %>
+                <div class="flink-info">
+                  <a href="<%= friend.siteLink %>" target="_blank"><%= friend.siteName %></a>
+                  <br />
+                  <%= friend.description %>
+                </div>
+              </div>
+            </a>
+          <% }); %>
+        <% } %>
+      </div>
+
+    </div>
+    <%- include('./includes/footer') %>
+  </body>
+</html>
